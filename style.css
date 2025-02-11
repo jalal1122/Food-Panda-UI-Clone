@@ -15,7 +15,7 @@ h4::selection,
 h5::selection,
 h6::selection,
 p::selection,
-span::selection, 
+span::selection,
 button::selection {
   background-color: #e11b70;
   color: white;
@@ -24,6 +24,7 @@ button::selection {
 /* header CSS */
 
 header {
+  z-index: 10;
   position: sticky;
   top: 0;
 }
@@ -69,6 +70,7 @@ header nav {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
 header nav .nav-in-wrap {
@@ -287,9 +289,57 @@ main .section-1-card button {
   font-weight: bold;
 }
 
+/* Section 2 */
+
+main .sectoin2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .sectoin2 .section-2-wrap {
+  width: 60vw;
+}
+
+main .sectoin2 h1 {
+  font-size: 1.6vw;
+  font-weight: 900;
+  color: #323232;
+  margin-bottom: 2vw;
+}
+
+main .sectoin2 .section-2-locations-div {
+  display: grid;
+  gap: 2vw;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+main .sectoin2 .location {
+  position: relative;
+}
+
+main .sectoin2 .location img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 0.8vw;
+  object-fit: cover;
+}
+
+main .sectoin2 .location-name-tag {
+  position: absolute;
+  bottom: 1vw;
+  left: 0.8vw;
+  background-color: white;
+  font-size: 0.8vw;
+  font-weight: bold;
+  padding: 0.4vw 0.8vw;
+  border-radius: 0.4vw;
+}
+
+
 /* Media Querries */
 
-@media screen and  (min-width: 1201px) and (max-width:1920px) {
+@media screen and (min-width: 1201px) and (max-width: 1920px) {
   /* top banner querries */
   header .top-banner svg {
     width: 2.5vw;
@@ -307,30 +357,30 @@ main .section-1-card button {
 
   /* nav querries */
 
-  header nav{
+  header nav {
     display: normal;
   }
 
-  header nav .nav-in-wrap{
+  header nav .nav-in-wrap {
     width: 1200px;
     padding: 0.5vw 3vw;
   }
 
-  header nav .left-side-nav{
+  header nav .left-side-nav {
     gap: 1.5vw;
   }
 
-  header nav .right-side-nav{ 
+  header nav .right-side-nav {
     gap: 2.5vw;
   }
 
-  header nav .right-side-nav .nli{
+  header nav .right-side-nav .nli {
     font-size: 1vw;
     padding: 0.4vw 1vw;
     border-radius: 0.8vw;
   }
 
-  header nav .right-side-nav .nsu{
+  header nav .right-side-nav .nsu {
     font-size: 1vw;
     padding: 0.4vw 1vw;
     border-radius: 0.8vw;
@@ -340,56 +390,69 @@ main .section-1-card button {
 
   /* hero querries */
 
-  main .hero{
+  main .hero {
     justify-content: center;
     padding: 0 3vw;
   }
 
-  main .hero-left{
+  main .hero-left {
     width: 600px;
   }
 
-  main .hero-right{
+  main .hero-right {
     width: 600px;
   }
 
   /* section 1 querries */
 
-  main .section-1-img-div{
+  main .section-1-img-div {
     height: 25vw;
   }
 
-  main .section1{
+  main .section1 {
     align-items: center;
   }
 
-  main .section-1-text-div{
+  main .section-1-text-div {
     width: 1000px;
   }
 
-  main .section-1-card-div{
+  main .section-1-card-div {
     width: 1000px;
-  } 
+  }
 
-  main .section1 h1{
+  main .section1 h1 {
     font-size: 2vw;
   }
 
-  main .section-1-card{
+  main .section-1-card {
     width: 38%;
     padding: 1.5vw;
   }
 
-  main .section-1-card h3{
+  main .section-1-card h3 {
     font-size: 1.5vw;
   }
 
-  main .section-1-card p{
+  main .section-1-card p {
     font-size: 1.2vw;
   }
 
-  main .section-1-card button{
+  main .section-1-card button {
     font-size: 1.2vw;
   }
-  
+
+  /* section 2 querries */
+
+  main .sectoin2 .section-2-wrap {
+    width: 1150px;
+  }
+
+  main .sectoin2 h1 {
+    font-size: 2vw;
+  }
+
+  main .sectoin2 .location-name-tag {
+    font-size: 1.5vw;
+  }
 }
