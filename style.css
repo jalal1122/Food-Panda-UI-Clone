@@ -337,6 +337,104 @@ main .sectoin2 .location-name-tag {
 }
 
 
+/* Section 3 */
+
+main .secttion3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3vw;
+}
+
+main .secttion3 .section-3-wrap {
+  width: 60vw;
+  position: relative;
+}
+
+main .secttion3 .section-3-wrap>img{
+  position: absolute;
+  right: 1vw;
+  top: 0vw;
+  width: 30vw;
+}
+
+main .secttion3 h1 {
+  font-size: 1.5vw;
+  font-weight: 900;
+  color: #323232;
+  margin-bottom: 1vw;
+}
+
+main .secttion3 .section-3-download-section {
+  display: flex;
+  padding: 2vw;
+  background-color: #e11b70;
+  border-radius: 0.8vw;
+}
+
+main .secttion3 .section-3-download-section-left-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+main .secttion3 .section-3-download-section-left-side .section-3-middle-layer .section-3-img-div{
+  width: 20%;
+  border-radius: 0.4vw;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5vw;
+}
+
+main .secttion3 .section-3-download-section-left-side .section-3-middle-layer .section-3-img-div img{
+  width: 100%;
+}
+
+main .secttion3 .section-3-download-section-left-side h2 {
+  font-size: 1.2vw;
+  font-weight: 900;
+  color: white;
+}
+
+main .secttion3 .section-3-download-section-left-side p {
+  font-size: 0.8vw;
+  color: white;
+  margin-bottom: 1vw;
+}
+
+main .secttion3 .section-3-download-section-left-side .section-3-middle-layer {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+main .secttion3 .section-3-download-section-left-side .section-3-middle-layer p {
+  font-size: 0.8vw;
+  color: white;
+  margin-bottom: 1vw;
+  width: 70%;
+}
+
+main .secttion3 .section-3-download-section-left-side .section-3-last-layer{
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+main .secttion3 .section-3-download-section-right-side {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .secttion3 .section-3-download-section-right-side img{
+  width: 120%;
+}
+
 /* Media Querries */
 
 @media screen and (min-width: 1201px) and (max-width: 1920px) {
@@ -455,4 +553,28 @@ main .sectoin2 .location-name-tag {
   main .sectoin2 .location-name-tag {
     font-size: 1.5vw;
   }
+
+  /* section 3 querries */
+
+  main .secttion3 .section-3-wrap {
+    width: 1150px;
+  }
+
+  main .secttion3 h1 {
+    font-size: 2vw;
+  }
+
+  main .secttion3 .section-3-download-section-left-side h2 {
+    font-size: 1.5vw;
+  }
+
+  main .secttion3 .section-3-download-section-left-side p {
+    font-size: 1.2vw;
+  }
+
+  main .secttion3 .section-3-wrap>img{
+    width: 35vw;
+    right: 0;
+  }
+  
 }
