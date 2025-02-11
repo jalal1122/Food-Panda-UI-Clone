@@ -8,6 +8,19 @@ body {
   font-family: "Agrandir";
 }
 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+p::selection,
+span::selection, 
+button::selection {
+  background-color: #e11b70;
+  color: white;
+}
+
 /* header CSS */
 
 header {
@@ -149,7 +162,7 @@ main .hero-right {
   display: flex;
   gap: 1vw;
   background-color: white;
-  box-shadow: 0 .188rem 1.25rem rgba(0, 0, 0, .1);
+  box-shadow: 0 0.188rem 1.25rem rgba(0, 0, 0, 0.1);
   border-radius: 0.8vw;
   padding: 0.8vw;
 }
@@ -205,21 +218,99 @@ main .hero-right {
   font-weight: bold;
 }
 
+/* Section 1 */
+
+main .section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2vw;
+  padding: 2vw 0;
+  background-color: white;
+  margin-top: 3vw;
+}
+
+main .section1 h1 {
+  font-size: 1.6vw;
+  font-weight: 900;
+  color: #323232;
+}
+
+main .section-1-img-div {
+  width: 100vw;
+  height: 15vw;
+  overflow: hidden;
+  background-image: url(./images/section-1-img.png);
+  background-position: center;
+  background-size: cover;
+}
+
+main .section-1-text-div {
+  width: 80%;
+}
+
+main .section-1-card-div {
+  width: 80%;
+}
+
+main .section-1-card {
+  width: 35%;
+  background-color: white;
+  box-shadow: 0 0.188rem 1.25rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.8vw;
+  padding: 1vw;
+  position: relative;
+  top: -8vw;
+}
+
+main .section-1-card h3 {
+  font-size: 1vw;
+  font-weight: 900;
+  color: #323232;
+  margin-bottom: 1vw;
+}
+
+main .section-1-card p {
+  font-size: 0.8vw;
+  color: #707070;
+  margin-bottom: 1vw;
+}
+
+main .section-1-card button {
+  background-color: #e11b70;
+  border: 1px solid white;
+  color: white;
+  font-size: 0.8vw;
+  padding: 0.5vw 1.2vw;
+  cursor: pointer;
+  border-radius: 0.4vw;
+  font-weight: bold;
+}
+
 /* Media Querries */
 
 @media screen and ((min-width: 1201px) and (max-width:1920px)) {
   /* top banner querries */
   .top-banner svg {
-    width: 1.5vw;
+    width: 1.8vw;
   }
 
   .top-banner p {
-    font-size: 1vw;
+    font-size: 1.2vw;
   }
 
   .top-banner button {
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     padding: 0.8vw 1.5vw;
     border-radius: 0.8vw;
+  }
+
+  header nav{
+    display: normal;
+  }
+
+  header nav .nav-in-wrap{
+    width: 1200px;
+    padding: 0 3vw;
   }
 }
