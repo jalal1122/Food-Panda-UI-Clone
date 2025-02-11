@@ -21,20 +21,20 @@ header .top-banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2vw;
+  gap: 1vw;
   background-color: #e11b70;
-  padding: 1vw 0;
+  padding: 0.3vw 0;
 }
 
 header .top-banner svg {
-  width: 6%;
+  width: 2%;
   filter: invert(100%) sepia(76%) saturate(221%) hue-rotate(234deg)
     brightness(114%) contrast(100%);
 }
 
 header .top-banner p {
   color: white;
-  font-size: 1.8vw;
+  font-size: 1vw;
   font-weight: bold;
 }
 
@@ -42,10 +42,10 @@ header .top-banner button {
   background-color: #e11b70;
   border: 1px solid white;
   color: white;
-  font-size: 1.7vw;
-  padding: 1vw 2vw;
+  font-size: 0.6vw;
+  padding: 0.4vw 0.8vw;
   cursor: pointer;
-  border-radius: 0.8vw;
+  border-radius: 0.2vw;
   font-weight: bold;
 }
 
@@ -53,10 +53,17 @@ header .top-banner button {
 
 header nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 2vw 0;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+header nav .nav-in-wrap {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5vw 0;
 }
 
 header nav .left-side-nav {
@@ -77,10 +84,10 @@ header nav .right-side-nav .nli {
   background-color: white;
   border: 1px solid black;
   color: black;
-  font-size: 1.5vw;
-  padding: 0.8vw 1.5vw;
+  font-size: 0.8vw;
+  padding: 0.28vw 0.8vw;
   cursor: pointer;
-  border-radius: 0.8vw;
+  border-radius: 0.3vw;
   font-weight: bold;
 }
 
@@ -88,10 +95,10 @@ header nav .right-side-nav .nsu {
   background-color: #e11b70;
   border: 1px solid white;
   color: white;
-  font-size: 1.5vw;
-  padding: 0.8vw 1.5vw;
+  font-size: 0.8vw;
+  padding: 0.3vw 0.8vw;
   cursor: pointer;
-  border-radius: 0.8vw;
+  border-radius: 0.3vw;
   font-weight: bold;
 }
 
@@ -102,7 +109,117 @@ header nav .right-side-nav-language-div {
   gap: 0.5vw;
 }
 
-.fl-interaction-primary{
-  fill:#e11b70;
+.fl-interaction-primary {
+  fill: #e11b70;
 }
 
+/* main CSS */
+
+/* Hero Section */
+
+main .hero {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+main .hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  width: 40vw;
+}
+
+main .hero-left h1 {
+  font-size: 1.6vw;
+  font-weight: 900;
+  color: #323232;
+}
+
+main .hero-right img {
+  width: 100%;
+}
+
+main .hero-right {
+  width: 40vw;
+}
+
+.search-location-div {
+  display: flex;
+  gap: 1vw;
+  background-color: white;
+  box-shadow: 0 .188rem 1.25rem rgba(0, 0, 0, .1);
+  border-radius: 0.8vw;
+  padding: 0.8vw;
+}
+
+.search-div {
+  position: relative;
+  display: flex;
+  width: 75%;
+}
+
+.search-div input {
+  border: none;
+  outline: 1px solid rgb(161, 161, 161);
+  font-size: 0.7vw;
+  padding: 0.2vw 0;
+  width: 100%;
+  border-radius: 0.4vw;
+}
+
+.search-div p {
+  font-size: 1vw;
+  color: #707070;
+  position: absolute;
+  left: 0.7vw;
+  top: 0.4vw;
+}
+
+.search-div svg {
+  position: absolute;
+  right: 5.8vw;
+  top: 0.4vw;
+  cursor: pointer;
+  fill: #e11b70;
+}
+
+.search-div h6 {
+  position: absolute;
+  top: 0.4vw;
+  right: 2%;
+  cursor: pointer;
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.search-location-div button {
+  background-color: #e11b70;
+  border: 1px solid white;
+  color: white;
+  font-size: 1vw;
+  padding: 0.5vw 1.2vw;
+  cursor: pointer;
+  border-radius: 0.4vw;
+  font-weight: bold;
+}
+
+/* Media Querries */
+
+@media screen and ((min-width: 1201px) and (max-width:1920px)) {
+  /* top banner querries */
+  .top-banner svg {
+    width: 1.5vw;
+  }
+
+  .top-banner p {
+    font-size: 1vw;
+  }
+
+  .top-banner button {
+    font-size: 1.5vw;
+    padding: 0.8vw 1.5vw;
+    border-radius: 0.8vw;
+  }
+}
