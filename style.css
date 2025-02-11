@@ -289,21 +289,23 @@ main .section-1-card button {
 
 /* Media Querries */
 
-@media screen and ((min-width: 1201px) and (max-width:1920px)) {
+@media screen and  (min-width: 1201px) and (max-width:1920px) {
   /* top banner querries */
-  .top-banner svg {
-    width: 1.8vw;
+  header .top-banner svg {
+    width: 2.5vw;
   }
 
-  .top-banner p {
-    font-size: 1.2vw;
+  header .top-banner p {
+    font-size: 1.25vw;
   }
 
-  .top-banner button {
-    font-size: 1.7vw;
-    padding: 0.8vw 1.5vw;
+  header .top-banner button {
+    font-size: 0.8vw;
+    padding: 0.6vw 1vw;
     border-radius: 0.8vw;
   }
+
+  /* nav querries */
 
   header nav{
     display: normal;
@@ -311,6 +313,83 @@ main .section-1-card button {
 
   header nav .nav-in-wrap{
     width: 1200px;
+    padding: 0.5vw 3vw;
+  }
+
+  header nav .left-side-nav{
+    gap: 1.5vw;
+  }
+
+  header nav .right-side-nav{ 
+    gap: 2.5vw;
+  }
+
+  header nav .right-side-nav .nli{
+    font-size: 1vw;
+    padding: 0.4vw 1vw;
+    border-radius: 0.8vw;
+  }
+
+  header nav .right-side-nav .nsu{
+    font-size: 1vw;
+    padding: 0.4vw 1vw;
+    border-radius: 0.8vw;
+  }
+
+  /* main querries */
+
+  /* hero querries */
+
+  main .hero{
+    justify-content: center;
     padding: 0 3vw;
   }
+
+  main .hero-left{
+    width: 600px;
+  }
+
+  main .hero-right{
+    width: 600px;
+  }
+
+  /* section 1 querries */
+
+  main .section-1-img-div{
+    height: 25vw;
+  }
+
+  main .section1{
+    align-items: center;
+  }
+
+  main .section-1-text-div{
+    width: 1000px;
+  }
+
+  main .section-1-card-div{
+    width: 1000px;
+  } 
+
+  main .section1 h1{
+    font-size: 2vw;
+  }
+
+  main .section-1-card{
+    width: 38%;
+    padding: 1.5vw;
+  }
+
+  main .section-1-card h3{
+    font-size: 1.5vw;
+  }
+
+  main .section-1-card p{
+    font-size: 1.2vw;
+  }
+
+  main .section-1-card button{
+    font-size: 1.2vw;
+  }
+  
 }
