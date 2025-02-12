@@ -336,7 +336,6 @@ main .sectoin2 .location-name-tag {
   border-radius: 0.4vw;
 }
 
-
 /* Section 3 */
 
 main .secttion3 {
@@ -351,7 +350,7 @@ main .secttion3 .section-3-wrap {
   position: relative;
 }
 
-main .secttion3 .section-3-wrap>img{
+main .secttion3 .section-3-wrap > img {
   position: absolute;
   right: 1vw;
   top: 0vw;
@@ -379,7 +378,11 @@ main .secttion3 .section-3-download-section-left-side {
   gap: 1vw;
 }
 
-main .secttion3 .section-3-download-section-left-side .section-3-middle-layer .section-3-img-div{
+main
+  .secttion3
+  .section-3-download-section-left-side
+  .section-3-middle-layer
+  .section-3-img-div {
   width: 20%;
   border-radius: 0.4vw;
   border: 2px solid white;
@@ -389,7 +392,12 @@ main .secttion3 .section-3-download-section-left-side .section-3-middle-layer .s
   padding: 0.5vw;
 }
 
-main .secttion3 .section-3-download-section-left-side .section-3-middle-layer .section-3-img-div img{
+main
+  .secttion3
+  .section-3-download-section-left-side
+  .section-3-middle-layer
+  .section-3-img-div
+  img {
   width: 100%;
 }
 
@@ -411,14 +419,18 @@ main .secttion3 .section-3-download-section-left-side .section-3-middle-layer {
   gap: 1vw;
 }
 
-main .secttion3 .section-3-download-section-left-side .section-3-middle-layer p {
+main
+  .secttion3
+  .section-3-download-section-left-side
+  .section-3-middle-layer
+  p {
   font-size: 0.8vw;
   color: white;
   margin-bottom: 1vw;
   width: 70%;
 }
 
-main .secttion3 .section-3-download-section-left-side .section-3-last-layer{
+main .secttion3 .section-3-download-section-left-side .section-3-last-layer {
   display: flex;
   align-items: center;
   gap: 1vw;
@@ -431,8 +443,210 @@ main .secttion3 .section-3-download-section-right-side {
   align-items: center;
 }
 
-main .secttion3 .section-3-download-section-right-side img{
+main .secttion3 .section-3-download-section-right-side img {
   width: 120%;
+}
+
+/* Section 4 */
+
+main .section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2vw;
+  padding: 2vw 0;
+  background-color: white;
+  margin-top: 3vw;
+}
+
+main .section4 h1 {
+  font-size: 1.6vw;
+  font-weight: 900;
+  color: #323232;
+}
+
+main .section-4-img-div {
+  width: 100vw;
+  height: 15vw;
+  overflow: hidden;
+  background-image: url(./images/section-4-img.png);
+  background-position: center;
+  background-size: cover;
+}
+
+main .section-4-text-div {
+  width: 80%;
+}
+
+main .section-4-card-div {
+  width: 80%;
+}
+
+main .section-4-card {
+  width: 35%;
+  background-color: white;
+  box-shadow: 0 0.188rem 1.25rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.8vw;
+  padding: 1vw;
+  position: relative;
+  top: -8vw;
+}
+
+main .section-4-card h3 {
+  font-size: 1vw;
+  font-weight: 900;
+  color: #323232;
+  margin-bottom: 1vw;
+}
+
+main .section-4-card p {
+  font-size: 0.8vw;
+  color: #707070;
+  margin-bottom: 1vw;
+}
+
+main .section-4-card button {
+  background-color: #e11b70;
+  border: 1px solid white;
+  color: white;
+  font-size: 0.8vw;
+  padding: 0.5vw 1.2vw;
+  cursor: pointer;
+  border-radius: 0.4vw;
+  font-weight: bold;
+}
+
+/* Section 5 */
+
+main .section5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw 0;
+  background-color: white;
+}
+
+main .section-5-wrap {
+  width: 55vw;
+}
+
+main .section-5-wrap h1 {
+  font-weight: 900;
+  color: #323232;
+  margin-bottom: 1vw;
+}
+
+main .section-5-wrap p {
+  color: #707070;
+  margin-bottom: 1vw;
+}
+
+main .section-5-wrap h3 {
+  font-weight: 900;
+  color: #323232;
+  margin-bottom: 1vw;
+}
+
+main .section-5-wrap ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  list-style: none;
+  margin-bottom: 1vw;
+}
+
+main .section-5-wrap ul li {
+  font-size: 0.8vw;
+  color: #707070;
+}
+
+main .section-5-wrap ul li span {
+  color: #e11b70;
+  margin-right: 0.3vw;
+}
+
+main .section-5-wrap p span {
+  color: #e11b70;
+  text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-wrap {
+  width: 60vw;
+}
+
+footer .footer-wrap .footer-divider {
+  border-bottom: 1px solid #d6d6d683;
+  margin: 2vw 0;
+}
+
+footer .footer-wrap p {
+  font-size: 0.8vw;
+  margin: 1vw 0;
+}
+
+footer .footer-wrap p span {
+  text-decoration: underline;
+}
+
+footer .footer-middle-layer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vw 0;
+}
+
+footer .footer-middle-layer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  list-style: none;
+}
+
+footer .footer-middle-layer ul li {
+  font-size: 0.8vw;
+  text-decoration: underline;
+}
+
+footer .footer-last-layer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vw 0;
+}
+
+footer .footer-last-layer .footer-last-layer-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+footer .footer-vertical-divider {
+  border-left: 1px solid #31313183;
+  height: 140%;
+  margin: 0 1vw;
+}
+
+footer .footer-last-layer .footer-last-layer-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+footer .footer-last-layer .footer-last-layer-right .footer-svg-circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5vw;
+  height: 2.5vw;
+  border: 1px solid #424242;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 /* Media Querries */
@@ -572,9 +786,70 @@ main .secttion3 .section-3-download-section-right-side img{
     font-size: 1.2vw;
   }
 
-  main .secttion3 .section-3-wrap>img{
+  main .secttion3 .section-3-wrap > img {
     width: 35vw;
     right: 0;
   }
-  
+
+  /* section 4 querries */
+
+  main .section-4-img-div {
+    height: 25vw;
+  }
+
+  main .section4 {
+    align-items: center;
+  }
+
+  main .section-4-text-div {
+    width: 1000px;
+  }
+
+  main .section-4-card-div {
+    width: 1000px;
+  }
+
+  main .section4 h1 {
+    font-size: 2vw;
+  }
+
+  main .section-4-card {
+    width: 38%;
+    padding: 1.5vw;
+  }
+
+  main .section-4-card h3 {
+    font-size: 1.5vw;
+  }
+
+  main .section-4-card p {
+    font-size: 1.2vw;
+  }
+
+  main .section-4-card button {
+    font-size: 1.2vw;
+  }
+
+  /* section 5 querries */
+
+  main .section-5-wrap {
+    width: 1150px;
+  }
+
+  /* footer querries */
+
+  footer .footer-wrap {
+    width: 1150px;
+  }
+
+  footer .footer-wrap p {
+    font-size: 1.3vw;
+  }
+
+  footer .footer-wrap ul li {
+    font-size: 1.3vw;
+  }
+
+
+
 }
