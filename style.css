@@ -638,7 +638,7 @@ footer .footer-last-layer .footer-last-layer-right {
   gap: 0.5vw;
 }
 
-footer .footer-last-layer .footer-last-layer-right .footer-svg-circle{
+footer .footer-last-layer .footer-last-layer-right .footer-svg-circle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -849,7 +849,194 @@ footer .footer-last-layer .footer-last-layer-right .footer-svg-circle{
   footer .footer-wrap ul li {
     font-size: 1.3vw;
   }
+}
 
+/* Media Querries from 960 to 1200 */
 
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  /* top banner querries */
 
+  header .top-banner svg {
+    width: 3vw;
+  }
+
+  header .top-banner p {
+    font-size: 1.5vw;
+  }
+
+  header .top-banner button {
+    font-size: 1.1vw;
+    padding: 0.8vw 1.2vw;
+    border-radius: 1vw;
+  }
+
+  /* nav querries */
+
+  header nav {
+    display: normal;
+  }
+
+  header nav .nav-in-wrap {
+    width: 100vw;
+    padding: 0.5vw 3vw;
+  }
+
+  header nav .left-side-nav {
+    gap: 1.5vw;
+  }
+
+  header nav .right-side-nav {
+    gap: 2.5vw;
+  }
+
+  header nav .right-side-nav .nli {
+    font-size: 1.4vw;
+    padding: 0.7vw 1.4vw;
+    border-radius: 0.8vw;
+  }
+
+  header nav .right-side-nav .nsu {
+    font-size: 1.4vw;
+    padding: 0.7vw 1.4vw;
+    border-radius: 0.8vw;
+  }
+
+  /* main querries */
+
+  /* hero querries */
+
+  main .hero {
+    justify-content: center;
+    padding: 0 3vw;
+  }
+
+  main .hero-left {
+    width: 60vw;
+  }
+
+  main .hero-right {
+    width: 40vw;
+  }
+
+  main .hero-left h1 {
+    font-size: 2.5vw;
+  }
+
+  .search-div input {
+    font-size: 1vw;
+    padding: 1vw 0;
+  }
+
+  .search-div p {
+    font-size: 1.4vw;
+  }
+
+  .search-div h6 {
+    font-size: 1.4vw;
+  }
+
+  .search-div svg {
+    right: 8vw;
+    top: 0.3vw;
+  }
+
+  .search-location-div button {
+    font-size: 1.4vw;
+    padding: 0.8vw 1.4vw;
+    border-radius: 0.8vw;
+  }
+
+  /* section 1 querries */
+
+  main .section-1-img-div {
+    height: 35vw;
+  }
+
+  main .section1 {
+    align-items: center;
+  }
+
+  main .section-1-text-div {
+    width: 80vw;
+  }
+
+  main .section-1-card-div {
+    width: 80vw;
+  }
+
+  main .section1 h1 {
+    font-size: 2.5vw;
+  }
+
+  main .section-1-card {
+    width: 48%;
+    padding: 1.5vw;
+  }
+
+  main .section-1-card h3 {
+    font-size: 1.8vw;
+  }
+
+  main .section-1-card p {
+    font-size: 1.5vw;
+  }
+
+  main .section-1-card button {
+    font-size: 1.5vw;
+    padding: 0.8vw 1.4vw;
+    border-radius: 0.8vw;
+  }
+
+  /* section 2 querries */
+
+  main .sectoin2 .section-2-wrap {
+    width: 95vw;
+  }
+
+  main .sectoin2 h1{
+    font-size: 2.4vw;
+  }
+
+  main .sectoin2 .section-2-locations-div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main .sectoin2 h1 {
+    font-size: 2.3vw;
+  }
+
+  main .sectoin2 .location-name-tag {
+    font-size: 1.8vw;
+  }
+
+   /* section 3 querries */
+
+   main .secttion3 .section-3-wrap {
+    width: 93vw;
+  }
+
+  main .secttion3 h1 {
+    font-size: 2.7vw;
+  }
+
+  main .secttion3 .section-3-download-section-left-side h2 {
+    font-size: 2.2vw;
+  }
+
+  main .secttion3 .section-3-download-section-left-side p {
+    font-size: 1.9vw;
+  }
+
+  main .secttion3 .section-3-wrap > img {
+    width: 40vw;
+    right: 0;
+  }
+
+  main .secttion3 .section-3-download-section-left-side h2 {
+    font-size: 2vw;
+  }
+
+  main .secttion3 .section-3-download-section-left-side p {
+    font-size: 1.5vw;
+  }
 }
