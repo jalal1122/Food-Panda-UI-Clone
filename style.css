@@ -128,11 +128,17 @@ header nav .right-side-nav-language-div {
   fill: #e11b70;
 }
 
+/* phone nav Css */
+
+header .phone-responsive-nav {
+  display: none;
+}
+
 /* main CSS */
 
 /* Hero Section */
 
-main .hero {
+main .hero .hero-top {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -218,6 +224,10 @@ main .hero-right {
   cursor: pointer;
   border-radius: 0.4vw;
   font-weight: bold;
+}
+
+main .hero .hero-bottom{
+  display: none;
 }
 
 /* Section 1 */
@@ -443,9 +453,10 @@ main .secttion3 .section-3-download-section-right-side {
   align-items: center;
 }
 
-main .secttion3 .section-3-download-section-right-side img {
-  width: 120%;
+#section-3-download-section-img{
+  display: none;
 }
+
 
 /* Section 4 */
 
@@ -702,7 +713,7 @@ footer .footer-last-layer .footer-last-layer-right .footer-svg-circle {
 
   /* hero querries */
 
-  main .hero {
+  main .hero .hero-top {
     justify-content: center;
     padding: 0 3vw;
   }
@@ -905,7 +916,7 @@ footer .footer-last-layer .footer-last-layer-right .footer-svg-circle {
 
   /* hero querries */
 
-  main .hero {
+  main .hero .hero-top {
     justify-content: center;
     padding: 0 3vw;
   }
@@ -993,7 +1004,7 @@ footer .footer-last-layer .footer-last-layer-right .footer-svg-circle {
     width: 95vw;
   }
 
-  main .sectoin2 h1{
+  main .sectoin2 h1 {
     font-size: 2.4vw;
   }
 
@@ -1009,9 +1020,9 @@ footer .footer-last-layer .footer-last-layer-right .footer-svg-circle {
     font-size: 1.8vw;
   }
 
-   /* section 3 querries */
+  /* section 3 querries */
 
-   main .secttion3 .section-3-wrap {
+  main .secttion3 .section-3-wrap {
     width: 93vw;
   }
 
@@ -1038,5 +1049,705 @@ footer .footer-last-layer .footer-last-layer-right .footer-svg-circle {
 
   main .secttion3 .section-3-download-section-left-side p {
     font-size: 1.5vw;
+  }
+
+  /* section 4 querries */
+
+  main .section-4-img-div {
+    height: 35vw;
+  }
+
+  main .section4 {
+    align-items: center;
+  }
+
+  main .section-4-text-div {
+    width: 80vw;
+  }
+
+  main .section-4-card-div {
+    width: 80vw;
+  }
+
+  main .section4 h1 {
+    font-size: 2.5vw;
+  }
+
+  main .section-4-card {
+    width: 48%;
+    padding: 1.5vw;
+  }
+
+  main .section-4-card h3 {
+    font-size: 1.8vw;
+  }
+
+  main .section-4-card p {
+    font-size: 1.5vw;
+  }
+
+  main .section-4-card button {
+    font-size: 1.5vw;
+    padding: 0.8vw 1.4vw;
+    border-radius: 0.8vw;
+  }
+
+  /* section 5 querries */
+
+  main .section-5-wrap {
+    width: 95vw;
+  }
+
+  /* footer querries */
+
+  footer .footer-wrap {
+    width: 95vw;
+  }
+
+  footer .footer-wrap p {
+    font-size: 1.8vw;
+  }
+
+  footer .footer-wrap ul li {
+    font-size: 1.5vw;
+  }
+}
+
+/* Media Querries from 768 to 959 */
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* top banner querries */
+
+  header .top-banner {
+    padding: 0.7vw;
+  }
+
+  header .top-banner svg {
+    width: 3.3vw;
+  }
+
+  header .top-banner p {
+    font-size: 1.8vw;
+  }
+
+  header .top-banner button {
+    font-size: 1.4vw;
+    padding: 1vw 1.4vw;
+    border-radius: 1vw;
+  }
+
+  /* nav querries */
+
+  header nav {
+    justify-content: normal;
+  }
+
+  header nav .nav-in-wrap {
+    display: none;
+  }
+
+  header nav .phone-responsive-nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8vw 1vw;
+  }
+
+  /* main querries */
+
+  /* hero querries */
+
+  main .hero {
+    justify-content: center;
+    padding: 0 3vw;
+    background-color: #F7F7F7;
+  }
+
+  main .hero-left {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3vw;
+  }
+
+  main .hero-right {
+    width: 40vw;
+  }
+
+  main .hero-left h1 {
+    font-size: 3.5vw;
+    /* padding: 0 5vw; */
+  }
+
+  .hero .hero-left .search-location-div {
+    display: none;
+  }
+
+  main .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .hero .hero-bottom {
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -5vw;
+  }
+
+  main .hero .hero-bottom .search-div {
+    width: 90vw;
+    margin-bottom: 1vw;
+    box-shadow: 0px 0px 5px r gba(0, 0, 0, 0.25);
+  }
+
+  .search-div input {
+    font-size: 1vw;
+    padding: 1vw 0;
+  }
+
+  .search-div p {
+    font-size: 1.4vw;
+  }
+
+  .search-div h6 {
+    font-size: 1.4vw;
+    top: 0.8vw;
+  }
+
+  .search-div svg {
+    right: 9vw;
+    top: 0.3vw;
+  }
+
+  main .hero .hero-bottom button {
+    width: 90vw;
+    background-color: #e11b70;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4vw;
+    padding: 0.8vw 1.4vw;
+    border-radius: 0.8vw;
+  }
+
+  /* section 1 querries */
+
+  main .section-1-img-div {
+    height: 50vw;
+  }
+
+  main .section1 {
+    align-items: center;
+  }
+
+  main .section-1-text-div {
+    width: 90vw;
+  }
+
+  main .section-1-card-div {
+    width: 90vw;
+  }
+
+  main .section1 h1 {
+    font-size: 2.5vw;
+  }
+
+  main .section-1-card {
+    width: 48%;
+    padding: 1.5vw;
+  }
+
+  main .section-1-card h3 {
+    font-size: 1.8vw;
+  }
+
+  main .section-1-card p {
+    font-size: 1.5vw;
+  }
+
+  main .section-1-card button {
+    font-size: 1.5vw;
+    padding: 0.8vw 1.4vw;
+    border-radius: 0.8vw;
+  }
+
+   /* section 2 querries */
+
+   main .sectoin2 .section-2-wrap {
+    width: 90vw;
+  }
+
+  main .sectoin2 h1 {
+    font-size: 2.4vw;
+  }
+
+  main .sectoin2 .section-2-locations-div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main .sectoin2 h1 {
+    font-size: 2.3vw;
+  }
+
+  main .sectoin2 .location-name-tag {
+    font-size: 1.8vw;
+  }
+
+  /* section 3 querries */
+
+  main .secttion3 .section-3-wrap {
+    width: 93vw;
+    flex-direction: column;
+  }
+
+  main .secttion3 h1 {
+    font-size: 3vw;
+  }
+
+  main .secttion3 .section-3-download-section-left-side .section-3-middle-layer p {
+    font-size: 2.7vw;
+  }
+
+  main .secttion3 .section-3-wrap > img {
+    display: none;
+  }
+
+  main .secttion3 .section-3-download-section-left-side h2 {
+    font-size: 3.5vw;
+  }
+
+
+  main .secttion3 .section-3-download-section{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main .secttion3 .section-3-download-section-left-side{
+    width: 100%;
+  }
+
+  main
+  .secttion3
+  .section-3-download-section-left-side
+  .section-3-middle-layer
+  .section-3-img-div{
+    display: none;
+  }
+
+  main .secttion3 .section-3-download-section-left-side .section-3-middle-layer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .secttion3 .section-3-download-section-left-side .section-3-last-layer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section-3-download-section-img{
+    display: block;
+    width:60%;
+    align-self: center;
+  }
+
+  /* section 4 querries */
+
+  main .section-4-img-div {
+    height: 50vw;
+  }
+
+  main .section4 {
+    align-items: center;
+  }
+
+  main .section-4-text-div {
+    width: 90vw;
+  }
+
+  main .section-4-card-div {
+    width: 90vw;
+  }
+
+  main .section4 h1 {
+    font-size: 2.5vw;
+  }
+
+  main .section-4-card {
+    width: 48%;
+    padding: 1.5vw;
+  }
+
+  main .section-4-card h3 {
+    font-size: 1.8vw;
+  }
+
+  main .section-4-card p {
+    font-size: 1.5vw;
+  }
+
+  main .section-4-card button {
+    font-size: 1.5vw;
+    padding: 0.8vw 1.4vw;
+    border-radius: 0.8vw;
+  }
+
+  /* section 5 querries */
+
+  main .section-5-wrap {
+    width: 95vw;
+  }
+
+  /* footer querries */
+
+  footer .footer-wrap {
+    width: 95vw;
+  }
+
+  footer .footer-wrap p {
+    font-size: 2vw;
+  }
+
+  footer .footer-wrap ul li {
+    font-size: 1.8vw;
+  }
+}
+
+/* Media Querries from 767 to 480 */
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+  /* top banner querries */
+
+  header .top-banner {
+    padding: 0.7vw;
+  }
+
+  header .top-banner svg {
+    width: 3.3vw;
+  }
+
+  header .top-banner p {
+    font-size: 1.8vw;
+  }
+
+  header .top-banner button {
+    font-size: 1.4vw;
+    padding: 1vw 1.4vw;
+    border-radius: 1vw;
+  }
+
+  /* nav querries */
+
+  header nav {
+    justify-content: normal;
+  }
+
+  header nav .nav-in-wrap {
+    display: none;
+  }
+
+  header nav .phone-responsive-nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8vw 1vw;
+  }
+
+  /* main querries */
+
+  /* hero querries */
+
+  main .hero {
+    justify-content: center;
+    padding: 0 3vw;
+    background-color: #F7F7F7;
+  }
+
+  main .hero-left {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3vw;
+  }
+
+  main .hero-right {
+    width: 40vw;
+  }
+
+  main .hero-left h1 {
+    font-size: 3.5vw;
+    /* padding: 0 5vw; */
+  }
+
+  .hero .hero-left .search-location-div {
+    display: none;
+  }
+
+  main .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .hero .hero-bottom {
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -5vw;
+  }
+
+  main .hero .hero-bottom .search-div {
+    width: 90vw;
+    margin-bottom: 1vw;
+    box-shadow: 0px 0px 5px r gba(0, 0, 0, 0.25);
+  }
+
+  .search-div input {
+    font-size: 2vw;
+    padding: 2vw 0;
+  }
+
+  .search-div p {
+    font-size: 1.4vw;
+  }
+
+  .search-div h6 {
+    font-size: 1.4vw;
+    top: 2vw;
+  }
+
+  .search-div svg {
+    right: 10vw;
+    top: 0.4vw;
+  }
+
+  main .hero .hero-bottom button {
+    width: 90vw;
+    background-color: #e11b70;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2vw;
+    padding: 1.2vw 2vw;
+    border-radius: 0.8vw;
+  }
+
+  /* section 1 querries */
+
+  main .section-1-img-div {
+    height: 55vw;
+  }
+
+  main .section1 {
+    align-items: center;
+  }
+
+  main .section-1-text-div {
+    width: 90vw;
+  }
+
+  main .section-1-card-div {
+    width: 90vw;
+  }
+
+  main .section1 h1 {
+    font-size: 4vw;
+  }
+
+  main .section-1-card {
+    width: 100%;
+    padding: 1.8vw;
+  }
+
+  main .section-1-card h3 {
+    font-size: 2.4vw;
+  }
+
+  main .section-1-card p {
+    font-size: 2vw;
+  }
+
+  main .section-1-card button {
+    font-size: 2vw;
+    padding: 0.8vw 1.4vw;
+    border-radius: 0.8vw;
+  }
+
+   /* section 2 querries */
+
+   main .sectoin2 .section-2-wrap {
+    width: 85vw;
+  }
+
+  main .sectoin2 h1 {
+    font-size: 3vw;
+  }
+
+  main .sectoin2 .section-2-locations-div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main .sectoin2 .section-2-locations-div img{
+    border-radius: 15px;
+  }
+
+  main .sectoin2 h1 {
+    font-size: 3.5vw;
+  }
+
+  main .sectoin2 .location-name-tag {
+    font-size: 2.8vw;
+    bottom: 2vw;
+
+  }
+
+   /* section 3 querries */
+
+   main .secttion3 .section-3-wrap {
+    width: 93vw;
+    flex-direction: column;
+  }
+
+  main .secttion3 h1 {
+    font-size: 3.5vw;
+  }
+
+  main .secttion3 .section-3-download-section-left-side .section-3-middle-layer p {
+    font-size: 2.7vw;
+  }
+
+  main .secttion3 .section-3-wrap > img {
+    display: none;
+  }
+
+  main .secttion3 .section-3-download-section-left-side h2 {
+    font-size: 3.5vw;
+  }
+
+
+  main .secttion3 .section-3-download-section{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main .secttion3 .section-3-download-section-left-side{
+    width: 100%;
+  }
+
+  main
+  .secttion3
+  .section-3-download-section-left-side
+  .section-3-middle-layer
+  .section-3-img-div{
+    display: none;
+  }
+
+  main .secttion3 .section-3-download-section-left-side .section-3-middle-layer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .secttion3 .section-3-download-section-left-side .section-3-last-layer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section-3-download-section-img{
+    display: block;
+    width:60%;
+    align-self: center;
+  }
+
+  /* section 4 querries */
+
+  main .section-4-img-div {
+    height: 55vw;
+  }
+
+  main .section4 {
+    align-items: center;
+  }
+
+  main .section-4-text-div {
+    width: 90vw;
+  }
+
+  main .section-4-card-div {
+    width: 90vw;
+  }
+
+  main .section4 h1 {
+    font-size: 4vw;
+  }
+
+  main .section-4-card {
+    width: 100%;
+    padding: 1.8vw;
+  }
+
+  main .section-4-card h3 {
+    font-size: 2.4vw;
+  }
+
+  main .section-4-card p {
+    font-size: 2vw;
+  }
+
+  main .section-4-card button {
+    font-size: 2vw;
+    padding: 0.8vw 1.4vw;
+    border-radius: 0.8vw;
+  }
+
+  /* section 5 querries */
+
+  main .section-5-wrap {
+    width: 95vw;
+  }
+
+  /* footer querries */
+
+  footer .footer-wrap {
+    width: 95vw;
+  }
+
+  footer .footer-wrap p {
+    font-size: 2vw;
+  }
+
+  footer .footer-wrap ul li {
+    font-size: 1.8vw;
+  }
+
+  footer .footer-middle-layer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .footer-last-layer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
