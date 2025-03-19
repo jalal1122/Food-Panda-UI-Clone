@@ -1,8 +1,3 @@
-Sure! I'll go through your **Food Panda UI Clone** project and create a detailed README file for your GitHub repo. Give me a moment.
-
-Certainly, Jalal! Here's a comprehensive `README.md` file for your **Food Panda UI Clone** project:
-
-```markdown
 # Food Panda UI Clone
 
 This project is a clone of the Food Panda user interface, developed as part of the SMIT Assignment 05 under the guidance of Sir Tatheer. The primary objective was to replicate the design and layout of the Food Panda website using HTML and CSS, enhancing skills in front-end web development.
@@ -64,10 +59,6 @@ Contributions are welcome! If you'd like to enhance this project, please follow 
 3. Commit your changes (`git commit -m 'Add some feature'`).
 4. Push to the branch (`git push origin feature/YourFeatureName`).
 5. Open a Pull Request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
